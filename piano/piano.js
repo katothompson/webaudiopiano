@@ -16,7 +16,7 @@ svg.attr('height', height);
 // get the data async from csv file and initialize the program
 var getData = function() {
       
-            var baseurl = 'http://localhost:8080/'
+            var baseurl = './'
             
             d3.csv(baseurl + 'piano.csv', function(err, data) {
                   if(err) {

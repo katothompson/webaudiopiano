@@ -1,0 +1,70 @@
+body {
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div {
+      background-color: steelblue;
+      border-radius: 5px;
+      text-align: center;
+}
+
+svg {
+      user-select: none;
+      -webkit-user-drag: none;
+}
+
+h2 {
+      animation-duration: 4s;
+      animation-name: roll;
+}
+
+.circle {
+      animation-duration: 4.5s;
+      animation-name: fadeinout;
+}
+.text {
+      font-family: 'Dancing Script', cursive;
+      animation-duration: 4.5s;
+      animation-name: fadeinouttext;
+}
+
+@keyframes roll {
+      from {opacity: 0}
+      to {opacity: 1}
+}
+
+@keyframes fadeinout {
+
+      from {
+            opacity: 0;
+      }
+      15% {
+            opacity: 0.75;
+      }
+      75% {
+            opacity: 0.75;
+      }
+      to {
+            opacity:0;
+      }
+}
+
+@keyframes fadeinouttext {
+      
+            from {
+                  color: rgba(255,220,0,0);
+            }
+            15% {
+                  
+                  color: rgba(255,220,0,1);
+            }
+            50% {
+                  
+                  color: rgba(255,220,0,1);
+            }
+            to {
+                  
+                  color: rgba(255,220,0,0);
+            }
+      }
